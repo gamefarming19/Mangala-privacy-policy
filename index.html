@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — Mangala Pro | Twin Node</title>
+  <meta name="description" content="Mangala Pro (com.TwinNode.Mangala) mobil oyunu için Twin Node resmi gizlilik politikası." />
+  <style>
+    :root {
+      --walnut-deep: #1c1209;
+      --walnut-card: #2d1d10;
+      --brass-gold: #d4a84b;
+      --brass-bright: #f2cf7e;
+      --parchment-bg: #faf6ef;
+      --surface-card: #ffffff;
+      --text-main: #231911;
+      --text-muted: #5c4b3c;
+      --border-soft: #e6dccb;
+      --accent-tint: #f5ecdb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--parchment-bg);
+      color: var(--text-main);
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--walnut-deep) 0%, var(--walnut-card) 100%);
+      color: #fff8eb;
+      border-bottom: 3px solid var(--brass-gold);
+      padding: 40px 20px 32px;
+    }
+
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-eyebrow {
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brass-bright);
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+    }
+
+    .meta-line {
+      margin: 0;
+      font-size: 0.94rem;
+      color: #e2d3bc;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(212, 168, 75, 0.55);
+      border-radius: 10px;
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: #e8dcc8;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background-color: var(--brass-gold);
+      color: var(--walnut-deep);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 28px auto 56px;
+      padding: 0 18px;
+    }
+
+    .policy-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      padding: clamp(22px, 4vw, 42px);
+      box-shadow: 0 8px 30px rgba(28, 18, 9, 0.06);
+    }
+
+    .summary-box {
+      background: var(--accent-tint);
+      border-left: 4px solid var(--brass-gold);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+
+    .summary-box strong {
+      color: var(--walnut-deep);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+
+    .info-item {
+      background: #fcfaf6;
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .info-label {
+      display: block;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .info-value {
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--text-main);
+      word-break: break-word;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 1.24rem;
+      color: var(--walnut-deep);
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #8b5a14;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: #5c3a09;
+    }
+
+    code {
+      background: #f3ede2;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    footer {
+      max-width: 860px;
+      margin: 0 auto 36px;
+      padding: 0 18px;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div>
+        <p class="brand-eyebrow">Twin Node</p>
+        <h1 id="page-title">Mangala Pro — Gizlilik Politikası</h1>
+        <p class="meta-line" id="page-updated">Son Güncelleme: 20 Kasım 2026</p>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button type="button" id="btn-tr" class="lang-btn active" onclick="setLanguage('tr')">Türkçe</button>
+        <button type="button" id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- TURKISH VERSION -->
+    <article id="content-tr" class="policy-card" lang="tr">
+      <div class="summary-box">
+        <strong>Kısa Özet:</strong> <strong>Mangala Pro</strong>, <strong>Twin Node</strong> tarafından geliştirilen çevrimdışı bir strateji oyunudur. Uygulama içi hesap veya kayıt gerektirmez; kişisel verilerinizi (ad, e-posta, rehber, konum vb.) toplamaz veya geliştirici sunucularına yüklemez. Ücretsiz sürümde reklam gösterimi ve rıza yönetimi için yalnızca Google AdMob ve Google UMP SDK hizmetlerini kullanır.
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">Uygulama Adı</span>
+          <span class="info-value">Mangala Pro</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Paket Kimliği</span>
+          <span class="info-value"><code>com.TwinNode.Mangala</code></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Geliştirici</span>
+          <span class="info-value">Twin Node</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">İletişim E-posta</span>
+          <span class="info-value"><a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a></span>
+        </div>
+      </div>
+
+      <h2>1. Genel Bakış</h2>
+      <p>
+        Bu Gizlilik Politikası, <strong>Twin Node</strong> ("Geliştirici", "biz") tarafından yayınlanan <strong>Mangala Pro</strong> mobil uygulamasını (paket kimliği: <code>com.TwinNode.Mangala</code>) kullandığınızda bilgilerinizin nasıl işlendiğini açıklar. Uygulamayı indirerek veya kullanarak bu politikada belirtilen esasları kabul etmiş sayılırsınız.
+      </p>
+
+      <h2>2. Doğrudan Toplamadığımız Bilgiler</h2>
+      <p>
+        <strong>Mangala Pro</strong>, kullanıcı hesabı, üyelik girişi veya bulut profili gerektirmez. Twin Node tarafından işletilen herhangi bir uzak sunucumuz bulunmamaktadır. Bu nedenle oyun içinden doğrudan:
+      </p>
+      <ul>
+        <li>Ad, soyad, e-posta adresi, telefon numarası veya posta adresi gibi kimlik bilgilerinizi,</li>
+        <li>Hassas konum (GPS), kamera, mikrofon, kişi listesi, fotoğraf veya dosya içeriği verilerinizi</li>
+      </ul>
+      <p><strong>toplamıyor, saklamıyor ve üçüncü taraflarla paylaşmıyoruz.</strong></p>
+
+      <h2>3. Cihazınızda Yerel Olarak Saklanan Veriler</h2>
+      <p>
+        Oyun deneyiminizi korumak amacıyla aşağıdaki veriler yalnızca kendi cihazınızın uygulama depolama alanında (Android DataStore ve yerel SQLite veritabanı üzerinden) tutulur ve hiçbir zaman cihaz dışına gönderilmez:
+      </p>
+      <ul>
+        <li><strong>Oyun Tercihleri:</strong> Dil seçimi, arka plan müziği ve ses efektleri ayarları, varsayılan yapay zekâ zorluk seviyesi, ilk başlayan oyuncu ve süre tercihi.</li>
+        <li><strong>Maç Geçmişi:</strong> Tamamlanan maçların skorları, hamle sayıları, seçilen zorluk seviyesi, oyun tarih/saat bilgisi ve yapay zekâ hamle istatistikleri.</li>
+      </ul>
+      <p>
+        Bu yerel verileri istediğiniz zaman uygulama içindeki <em>Maç Geçmişi</em> ekranından tek tek veya toplu olarak silebilir, ya da uygulamayı cihazınızdan kaldırarak tüm yerel kayıtları tamamen temizleyebilirsiniz.
+      </p>
+
+      <h2>4. Üçüncü Taraf Hizmetleri ve Reklamlar (Google AdMob &amp; UMP)</h2>
+      <p>
+        Uygulamayı ücretsiz sunabilmek amacıyla <strong>Google AdMob</strong> (banner, geçiş reklamları ve isteğe bağlı ipucu kazanmak için ödüllü reklamlar) ile Avrupa Ekonomik Alanı (EEA), Birleşik Krallık ve ilgili bölgelerdeki yasal rıza yönetimi için <strong>Google User Messaging Platform (UMP) SDK</strong> kullanılmaktadır.
+      </p>
+      <p>
+        Google ve reklam ortakları; reklamların sunulması, sıklık sınırlandırılması, sahteciliğin önlenmesi ve performans ölçümü amacıyla aşağıdaki teknik verileri otomatik olarak işleyebilir:
+      </p>
+      <ul>
+        <li>Cihazın Reklam Kimliği (Google Advertising ID / AAID),</li>
+        <li>IP adresine dayalı yaklaşık konum bilgisi (ülke/şehir düzeyinde),</li>
+        <li>Cihaz modeli, işletim sistemi sürümü, ekran çözünürlüğü ve ağ bağlantı durumu,</li>
+        <li>Reklam gösterimi, tıklama ve etkileşim bilgileri ile temel çökme/tanılama metrikleri.</li>
+      </ul>
+      <p>
+        Google'ın verileri nasıl kullandığı hakkında ayrıntılı bilgi için lütfen aşağıdaki resmi bağlantıları inceleyin:
+      </p>
+      <ul>
+        <li>Google Gizlilik Politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li>Google Reklam Teknolojileri ve Verilerin Kullanımı: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
+      </ul>
+
+      <h2>5. Uygulama İzinleri</h2>
+      <p>
+        Mangala Pro, yalnızca en temel ve gerekli ağ izinlerini talep eder:
+      </p>
+      <ul>
+        <li><code>INTERNET</code>: Reklamların yüklenmesi ve UMP kullanıcı rıza formunun alınabilmesi için kullanılır.</li>
+        <li><code>ACCESS_NETWORK_STATE</code>: Cihazın internet bağlantısı olup olmadığını kontrol etmek için kullanılır (yapay zekâ oyun motoru tamamen çevrimdışı çalışır).</li>
+      </ul>
+      <p>
+        Uygulama; Kamera, Mikrofon, Konum, Rehber veya Harici Depolama/Galeri gibi hassas sistem izinlerini istemez.
+      </p>
+
+      <h2>6. Reklam Tercihleri ve Haklarınız (KVKK &amp; GDPR)</h2>
+      <p>
+        Veri koruma mevzuatı (6698 sayılı KVKK, AB GDPR ve CCPA dâhil) kapsamında aşağıdaki haklara sahipsiniz:
+      </p>
+      <ul>
+        <li><strong>Rıza Yönetimi:</strong> UMP rıza iletişim kutusu aracılığıyla kişiselleştirilmiş veya kişiselleştirilmemiş reklam tercihlerinizi belirleyebilir ve değiştirebilirsiniz.</li>
+        <li><strong>Reklam Kimliğini Sıfırlama / Kapatma:</strong> Android cihazınızın <em>Ayarlar &gt; Google &gt; Reklamlar</em> menüsünden Reklam Kimliğinizi sıfırlayabilir veya silebilirsiniz.</li>
+        <li><strong>Yerel Verileri Silme:</strong> Uygulama içindeki maç geçmişini dilediğiniz zaman temizleyebilir veya uygulamayı kaldırarak cihazdaki tüm verileri yok edebilirsiniz.</li>
+      </ul>
+
+      <h2>7. Çocukların Gizliliği</h2>
+      <p>
+        Mangala Pro genel bir kitleye yönelik geleneksel strateji oyunudur ve özellikle 13 yaşın (veya ülkenizdeki geçerli yasal rıza yaşının) altındaki çocuklara yönelik değildir. Twin Node olarak çocuklardan bilerek hiçbir kişisel bilgi toplamamaktayız. Çocuğunuzun bizimle kişisel bir bilgi paylaştığını düşünüyorsanız lütfen <a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a> adresinden bize ulaşın; gerekli inceleme derhâl yapılacaktır.
+      </p>
+
+      <h2>8. Veri Güvenliği</h2>
+      <p>
+        Cihaz içi oyun kayıtlarınız Android işletim sisteminin korumalı uygulama alanında saklanır. Uygulamanın Google reklam altyapısı ile gerçekleştirdiği tüm ağ iletişimi HTTPS/TLS şifrelemesi üzerinden yürütülür.
+      </p>
+
+      <h2>9. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+      <p>
+        Yasal düzenlemelerdeki veya uygulama özelliklerindeki güncellemelere bağlı olarak bu Gizlilik Politikası zaman zaman güncellenebilir. Güncellenen metin bu sayfada yayınlandığı tarihten itibaren geçerli olur ve sayfanın üst kısmındaki "Son Güncelleme" tarihi yenilenir.
+      </p>
+
+      <h2>10. İletişim</h2>
+      <p>
+        Bu Gizlilik Politikası, veri uygulamalarımız veya kullanıcı haklarınızla ilgili her türlü soru ve talebiniz için geliştiriciyle iletişime geçebilirsiniz:
+      </p>
+      <ul>
+        <li><strong>Geliştirici Adı:</strong> Twin Node</li>
+        <li><strong>E-posta:</strong> <a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a></li>
+        <li><strong>Uygulama:</strong> Mangala Pro (<code>com.TwinNode.Mangala</code>)</li>
+      </ul>
+    </article>
+
+    <!-- ENGLISH VERSION -->
+    <article id="content-en" class="policy-card" lang="en" hidden>
+      <div class="summary-box">
+        <strong>Summary:</strong> <strong>Mangala Pro</strong> is an offline strategy board game developed by <strong>Twin Node</strong>. It does not require an account or login, and Twin Node does not collect or upload personal information (such as your name, email, contacts, or precise location) to any developer-owned server. The app uses Google AdMob and Google User Messaging Platform (UMP) solely to serve ads and manage advertising consent.
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">App Name</span>
+          <span class="info-value">Mangala Pro</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Package Name</span>
+          <span class="info-value"><code>com.TwinNode.Mangala</code></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Developer</span>
+          <span class="info-value">Twin Node</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Contact Email</span>
+          <span class="info-value"><a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a></span>
+        </div>
+      </div>
+
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy explains how information is handled when you use the <strong>Mangala Pro</strong> mobile application (package ID: <code>com.TwinNode.Mangala</code>) published by <strong>Twin Node</strong> ("Developer", "we", "our"). By downloading or using the app, you agree to the practices described in this policy.
+      </p>
+
+      <h2>2. Information We Do Not Collect Directly</h2>
+      <p>
+        <strong>Mangala Pro</strong> requires no registration, sign-in, or user profile, and Twin Node operates no remote backend servers for the game. We do <strong>not</strong> directly collect, store, or transmit:
+      </p>
+      <ul>
+        <li>Personal identifiers such as your name, email address, phone number, or physical address;</li>
+        <li>Precise GPS location, camera, microphone, contacts, photos, or local user files.</li>
+      </ul>
+
+      <h2>3. Data Stored Locally on Your Device</h2>
+      <p>
+        To preserve your gameplay experience, the following information is stored strictly inside your device's private app storage (via Android DataStore and local SQLite/Room database) and is never uploaded to Twin Node:
+      </p>
+      <ul>
+        <li><strong>App Preferences:</strong> Selected language, background music and sound effect settings, default AI difficulty, first-player choice, and match timer settings.</li>
+        <li><strong>Match History:</strong> Completed match scores, move counts, difficulty level, timestamps, and AI search statistics.</li>
+      </ul>
+      <p>
+        You may delete individual match records or clear your entire match history inside the app at any time, or remove all local data completely by uninstalling the app.
+      </p>
+
+      <h2>4. Third-Party Services &amp; Advertising (Google AdMob &amp; UMP)</h2>
+      <p>
+        To keep Mangala Pro free to play, we integrate <strong>Google AdMob</strong> (for banner, interstitial, and optional rewarded hint ads) and the <strong>Google User Messaging Platform (UMP) SDK</strong> (to present consent forms where required by regulations such as GDPR in the EEA/UK).
+      </p>
+      <p>
+        Google and its advertising partners may automatically collect and process limited technical data for ad delivery, frequency capping, fraud prevention, and measurement, including:
+      </p>
+      <ul>
+        <li>Device Advertising ID (Google Advertising ID / AAID);</li>
+        <li>Approximate location derived from IP address;</li>
+        <li>Device model, OS version, screen dimensions, and network state;</li>
+        <li>Ad impression/click interactions and basic crash/diagnostic metrics.</li>
+      </ul>
+      <p>
+        Please review Google's privacy documentation to learn more about how Google processes data:
+      </p>
+      <ul>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li>How Google Uses Information from Partner Apps: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a></li>
+      </ul>
+
+      <h2>5. App Permissions</h2>
+      <p>
+        Mangala Pro requests only standard network permissions needed for advertising and consent management:
+      </p>
+      <ul>
+        <li><code>INTERNET</code>: Used to fetch ads and consent forms from Google services.</li>
+        <li><code>ACCESS_NETWORK_STATE</code>: Used to check connectivity status before requesting ads (the AI game engine runs 100% offline).</li>
+      </ul>
+      <p>
+        The app does not request sensitive permissions such as Camera, Microphone, Location, Contacts, or Media/Storage access.
+      </p>
+
+      <h2>6. Your Privacy Choices &amp; Rights (GDPR, CCPA &amp; Local Laws)</h2>
+      <ul>
+        <li><strong>Consent Preferences:</strong> Where applicable, you can manage personalized vs. non-personalized ad preferences through the UMP consent dialog.</li>
+        <li><strong>Reset or Delete Advertising ID:</strong> You can reset or opt out of personalized advertising via Android <em>Settings &gt; Google &gt; Ads</em>.</li>
+        <li><strong>Delete Local App Data:</strong> Clear match history from inside the app or uninstall the app to erase all stored preferences and match records.</li>
+      </ul>
+
+      <h2>7. Children's Privacy</h2>
+      <p>
+        Mangala Pro is a general-audience strategy board game and is not knowingly directed at children under the age of 13 (or the applicable digital age of consent in your jurisdiction). Twin Node does not knowingly collect personal information from children. If you believe a child has provided personal data, please contact us at <a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a>.
+      </p>
+
+      <h2>8. Data Security</h2>
+      <p>
+        Local preferences and match history reside inside Android's sandboxed application storage. All network communication performed by integrated Google advertising SDKs uses encrypted HTTPS/TLS connections.
+      </p>
+
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect legal requirements or app updates. Any changes will be posted on this page with an updated effective date at the top.
+      </p>
+
+      <h2>10. Contact Us</h2>
+      <p>
+        If you have any questions or requests regarding this Privacy Policy, please contact the developer:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Twin Node</li>
+        <li><strong>Email:</strong> <a href="mailto:gamedriver20@gmail.com">gamedriver20@gmail.com</a></li>
+        <li><strong>Application:</strong> Mangala Pro (<code>com.TwinNode.Mangala</code>)</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <p id="footer-text">&copy; 2026 Twin Node. Tüm hakları saklıdır. &bull; Mangala Pro</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      var isEn = lang === 'en';
+      document.getElementById('content-tr').hidden = isEn;
+      document.getElementById('content-en').hidden = !isEn;
+      document.getElementById('btn-tr').classList.toggle('active', !isEn);
+      document.getElementById('btn-en').classList.toggle('active', isEn);
+      document.documentElement.lang = isEn ? 'en' : 'tr';
+      document.title = isEn
+        ? 'Privacy Policy — Mangala Pro | Twin Node'
+        : 'Gizlilik Politikası — Mangala Pro | Twin Node';
+      document.getElementById('page-title').textContent = isEn
+        ? 'Mangala Pro — Privacy Policy'
+        : 'Mangala Pro — Gizlilik Politikası';
+      document.getElementById('page-updated').textContent = isEn
+        ? 'Last Updated: November 20, 2026'
+        : 'Son Güncelleme: 20 Kasım 2026';
+      document.getElementById('footer-text').innerHTML = isEn
+        ? '&copy; 2026 Twin Node. All rights reserved. &bull; Mangala Pro'
+        : '&copy; 2026 Twin Node. Tüm hakları saklıdır. &bull; Mangala Pro';
+    }
+
+    (function initLanguage() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('lang') === 'en') {
+        setLanguage('en');
+      }
+    })();
+  </script>
+</body>
+</html>
